@@ -75,3 +75,34 @@
 // })
 
 // check out mdn for more events....
+
+const myform = document.querySelector('#my-form');
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const msg = document.querySelector('.msg');
+const userList = document.querySelector('#users');
+
+myform.addEventListener('submit', onSubmit);
+
+function onSubmit(e) {
+    e.preventDefault();
+    // console.log(nameInput.value);
+    
+    // Validation
+    if(nameInput.value === '' || emailInput.value === '') {
+        msg.classList.add('error');
+        msg.innerHTML = '<center>Please enter all fields ! </center>';
+        setTimeout(() => msg.remove(), 3000) //3secs
+    } else {
+        // Insert
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(`${nameInput.value} : ${emailInput.value}`));
+        // Insert new node to user list with values
+        userList.appendChild(li);
+
+        // Clear input fields 
+        nameInput.value = '';
+        emailInput.value ='';
+    }
+}
+
