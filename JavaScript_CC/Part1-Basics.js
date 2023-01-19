@@ -68,7 +68,7 @@
 // fruits.pop();
 // console.log(fruits); //take out last one off
 
-// console.log(Array.isArray(fruits));
+// console.log(Array.isArray(fruits)); //to check if something has an array, returns true,false
 // console.log(fruits.indexOf('orange'));
 //----------------------------------
 
@@ -251,6 +251,7 @@
 
 // // comment above !!!!!!!
 // // arrow functins came with ES6, javascript 2015
+
 // const addNumbers = (num1, num2) => {
 //     return num1 + num2;
 // }

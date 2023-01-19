@@ -104,5 +104,15 @@ function onSubmit(e) {
         nameInput.value = '';
         emailInput.value ='';
     }
+
+    const cbtn = document.getElementsById('chkbtn');
+
+    cbtn.addEventListener('change', function() {
+        if (this.checked) {
+          console.log("mode on");
+        } else {
+          console.log("mode off");
+        }
+      });
 }
 
