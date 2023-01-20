@@ -56,7 +56,6 @@ Book.prototype.revise = function(newYear) {
 // console.log(book1);
 
 // Inheritance
-
 function Magazine (title, author, year, month) {
     Book.call(this, title, author, year);
 
@@ -132,7 +131,6 @@ console.log(book2);
 console.log(Book.topBookStore());
 
 // Inheritance with sub/super classes
-
 class Magazine extends Book {
     constructor(title, author, year, month) {
         super(title, author, year);
