@@ -13,310 +13,313 @@
 // Primitive Data Types
 // String, Numbers, Boolean, Null, undefined
 
-// const name = 'Anuka';
-// const age = 25;
-// const rating = 8.5;
-// const isCool = true;
-// const x = null;
-// const y = undefined;
-// let z;
+const name = 'Anuka';
+const age = 25;
+const rating = 8.5;
+const isCool = true;
+const x = null;
+const y = undefined;
+let z;
 
-// console.log(typeof name);
+console.log(typeof name);
 //----------------------------------
 
 
 
-// let Name = 'john';
-// let age = 30;
+let Name = 'john';
+let age = 30;
 
 // //Concatenation
-// console.log('My name is ' + Name + ', and I am ' + age + ' years old');
-// //Template strings
-// somethign = `My name is ${Name} and I'm ${age} old.`
-// console.log(somethign);
+console.log('My name is ' + Name + ', and I am ' + age + ' years old');
+//Template strings
+somethign = `My name is ${Name} and I'm ${age} old.`
+console.log(somethign);
 //----------------------------------
 
-// const s = "Hello World";
-// console.log(s.length);
-// console.log(s.toUpperCase());
-// console.log(s.toLocaleLowerCase());
-// console.log(s.substring(0, 5));
-// console.log(s.substring(0, 5).toLocaleUpperCase());
-// console.log(s.split(''));
+const s = "Hello World";
+console.log(s.length);
+console.log(s.toUpperCase());
+console.log(s.toLocaleLowerCase());
+console.log(s.substring(0, 5));
+console.log(s.substring(0, 5).toLocaleUpperCase());
+console.log(s.split(''));
 
-// const p = 'Technology, Computers, It, Code';
-// console.log(p.split(','))
+const p = 'Technology, Computers, It, Code';
+console.log(p.split(','))
 //----------------------------------
 
 //Arrray - variables that holds multiple values
 
-// const numbers = new Array(1,2,3,4,5);
+const numbers = new Array(1,2,3,4,5);
 
-// console.log(numbers);
+console.log(numbers);
 
-// const fruits = ['apple', 'orange', 'mango'];
+const fruits = ['apple', 'orange', 'mango'];
 
-// fruits[3] = 'grapes';
+fruits[3] = 'grapes';
 
-// fruits.push('pineapple');
+fruits.push('pineapple');
 
-// fruits.unshift('Kiwi'); //added to 1st
+//added to 1st
+fruits.unshift('Kiwi'); 
 
-// console.log(fruits);
-// console.log(fruits[1]);
+console.log(fruits);
+console.log(fruits[1]);
 
-// fruits.pop();
-// console.log(fruits); //take out last one off
+//take out last one off
+fruits.pop();
+console.log(fruits); 
 
-// console.log(Array.isArray(fruits)); //to check if something has an array, returns true,false
-// console.log(fruits.indexOf('orange'));
+//to check if something has an array, returns true,false
+console.log(Array.isArray(fruits)); 
+console.log(fruits.indexOf('orange'));
 //----------------------------------
 
 //Object literals
 
-// const person = {
-//     firstName: 'Micheal',
-//     lastName: 'Jackson',
-//     age:30,
-//     hobbies: ['music', 'acting', 'dancing'],
-//     address: {
-//         street: '50 main street',
-//         city: 'California',
-//         country: 'USA'
-//     }
-// }
-// console.log(person.firstName, person.age);
-// console.log(person.hobbies[2], person.address.city);
+const person = {
+    firstName: 'Micheal',
+    lastName: 'Jackson',
+    age:30,
+    hobbies: ['music', 'acting', 'dancing'],
+    address: {
+        street: '50 main street',
+        city: 'California',
+        country: 'USA'
+    }
+}
+console.log(person.firstName, person.age);
+console.log(person.hobbies[2], person.address.city);
 
-// //destructuring as pulling out individual variables
-// const { firstName, age, address:{ city, coutry } } = person;
-// console.log(firstName);
-// console.log(city);
+//destructuring as pulling out individual variables
+const { firstName, age, address:{ city, coutry } } = person;
+console.log(firstName);
+console.log(city);
 
-// //add
-// person.emai = 'michealJ123@hehe.com'
-// console.log(person)
+//add
+person.email = 'michealJ123@hehe.com'
+console.log(person)
 //----------------------------------
 
-// const todos = [
-//     {
-//         id:1,
-//         text:'Take out trash',
-//         isCompleted: true,
-//     },
-//     {
-//         id:2,
-//         text:'Meeting with boss',
-//         isCompleted: false,
-//     },
-//     {
-//         id:3,
-//         text:'Wash your car before 5pm',
-//         isCompleted: true,
-//     },
-// ];
+const todos = [
+    {
+        id:1,
+        text:'Take out trash',
+        isCompleted: true,
+    },
+    {
+        id:2,
+        text:'Meeting with boss',
+        isCompleted: false,
+    },
+    {
+        id:3,
+        text:'Wash your car before 5pm',
+        isCompleted: true,
+    },
+];
 
-// console.log(todos);
-// console.log(todos[1].text);
+console.log(todos);
+console.log(todos[1].text);
 
-// const todoJSON = JSON.stringify(todos);
-// console.log(todoJSON);
+const todoJSON = JSON.stringify(todos);
+console.log(todoJSON);
 //----------------------------------
 
-// const todos = [
-//     {
-//         id:1,
-//         text:'Take out trash',
-//         isCompleted: true,
-//     },
-//     {
-//         id:2,
-//         text:'Meeting with boss',
-//         isCompleted: false,
-//     },
-//     {
-//         id:3,
-//         text:'Wash your car before 5pm',
-//         isCompleted: true,
-//     },
-// ];
+const todos = [
+    {
+        id:1,
+        text:'Take out trash',
+        isCompleted: true,
+    },
+    {
+        id:2,
+        text:'Meeting with boss',
+        isCompleted: false,
+    },
+    {
+        id:3,
+        text:'Wash your car before 5pm',
+        isCompleted: true,
+    },
+];
 
 // // For loop
-// for(let i = 0; i <= 10; i++) {
-//     console.log(`For Loop Number : ${i}`);
-// }
+for(let i = 0; i <= 10; i++) {
+    console.log(`For Loop Number : ${i}`);
+}
 // // While loop
-// let i=0;
-// while(i < 10) {
-//     console.log(`While Loop Number : ${i}`);
-//     i++;
-// }
+let i=0;
+while(i < 10) {
+    console.log(`While Loop Number : ${i}`);
+    i++;
+}
 
-// for(let i = 0; i < todos.length; i++) {
-//     console.log(todos[i].text);
-// }
+for(let i = 0; i < todos.length; i++) {
+    console.log(todos[i].text);
+}
 
-// for(let todo of todos) {
-//     console.log(todo.id);
-// }
+for(let todo of todos) {
+    console.log(todo.id);
+}
 
-// // forEach, map, filter
+// forEach, map, filter
 
-// todos.forEach(function(todo) {
-//     console.log(todo.text);
-// });
+todos.forEach(function(todo) {
+    console.log(todo.text);
+});
 
-// const todoText = todos.map(function(todo) {
-//     return todo.text;
-// });
-// console.log(todoText);
+const todoText = todos.map(function(todo) {
+    return todo.text;
+});
+console.log(todoText);
 
-// const todoCompleted = todos.filter(function(todo) {
-//     return todo.isCompleted === true;
-// });
-// console.log(todoCompleted);
+const todoCompleted = todos.filter(function(todo) {
+    return todo.isCompleted === true;
+});
+console.log(todoCompleted);
 
-// const todoCompText = todos.filter(function(todo) {
-//     return todo.isCompleted === true;
-// }).map(function(todo) {
-//     return todo.text;
-// });
-// console.log(todoCompText);
+const todoCompText = todos.filter(function(todo) {
+    return todo.isCompleted === true;
+}).map(function(todo) {
+    return todo.text;
+});
+console.log(todoCompText);
 //----------------------------------
 
 // Conditionals
 
-// const x = 10, y = 20;
+const x = 10, y = 20;
 
-// if(x == 10) {
-//     console.log('x is 10');
-// }//will check value, works even if it is '10'
+if(x == 10) {
+    console.log('x is 10');
+}//will check value
 
-// if(x === 10) {
-//     console.log('x is 10');
-// }// === will check data type and value 
+if(x === 10) {
+    console.log('x is 10');
+}// === will check data type and value 
 
-// if(y === 10) {
-//     console.log('y is 10');
-// }else if(y > 10) {
-//     console.log('y is greater than 10');
-// }
-// else {
-//     console.log('y is less than 10');
-// }
+if(y === 10) {
+    console.log('y is 10');
+}else if(y > 10) {
+    console.log('y is greater than 10');
+}
+else {
+    console.log('y is less than 10');
+}
 
-// const p = 5, q = 10;
-// if(p > 7 || q > 7) {
-//     console.log('p or q or both greater than 7');
-// }else{
-//     console.log('both lesser than 7');
-// }
+const p = 5, q = 10;
+if(p > 7 || q > 7) {
+    console.log('p or q or both greater than 7');
+}else{
+    console.log('both lesser than 7');
+}
 //----------------------------------
 
 // Ternary operator ?
 
-// const x = 12;
+const x = 12;
 
-// const color = x > 5 ? 'red' : 'blue';
+const color = x > 5 ? 'red' : 'blue';
 
-// console.log(color);
+console.log(color);
 
-// switch(color) {
-//     case 'red':
-//         console.log('color is red');
-//         break;
-//     case 'blue':
-//         console.log('color is blue');
-//         break;
-//     default:
-//         console.log('color is not red or blue');
-//     break;
-// }
+switch(color) {
+    case 'red':
+        console.log('color is red');
+        break;
+    case 'blue':
+        console.log('color is blue');
+        break;
+    default:
+        console.log('color is not red or blue');
+    break;
+}
 //----------------------------------
 
-// function addNumbers(num1, num2) {
-//     console.log(num1 + num2);
-// }
-// addNumbers(5,10);
+function addNumbers(num1, num2) {
+    console.log(num1 + num2);
+}
+addNumbers(5,10);
 
-// function addNumbers(num1=3, num2=6) {
-//     console.log(num1 + num2);
-// }
-// addNumbers();
+function addNumbers(num1=3, num2=6) {
+    console.log(num1 + num2);
+}
+addNumbers();
 
-// function addNumbers(num1=3, num2=6) {
-//     return num1 + num2;
-// }
-// console.log(addNumbers(20,30));
+function addNumbers(num1=3, num2=6) {
+    return num1 + num2;
+}
+console.log(addNumbers(20,30));
 
-// // comment above !!!!!!!
-// // arrow functins came with ES6, javascript 2015
+// comment above !!!!!!!
+// arrow functins came with ES6, javascript 2015
 
-// const addNumbers = (num1, num2) => {
-//     return num1 + num2;
-// }
-// console.log(addNumbers(100,14));
+const addNumbers = (num1, num2) => {
+    return num1 + num2;
+}
+console.log(addNumbers(100,14));
 
-// const addNums = (num1, num2) => console.log(num1 + num2);
-// addNums(5,80);
+const addNums = (num1, num2) => console.log(num1 + num2);
+addNums(5,80);
 
-// const addNum = (num1, num2) => num1 + num2;
-// console.log(addNum(33,20));
+const addNum = (num1, num2) => num1 + num2;
+console.log(addNum(33,20));
 
-// const addNumm = num1 => num1 + 5;
-// console.log(addNumm(33));
+const addNumm = num1 => num1 + 5;
+console.log(addNumm(33));
 // //----------------------------------
 
 
 // OOP with js
 // pre classes
 // Constructor function
-// function Person(firstName, lastName, dob) {
-//     this.firstName = firstName;
-//     this.lastName = lastName;
-//     this.dob = new Date(dob);
+function Person(firstName, lastName, dob) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = new Date(dob);
 
-//     this.getBirthYear = function() {
-//         return this.dob.getFullYear();
-//     }
-//     this.getFullName = () => {
-//         return `${this.firstName}` + ' '  +  `${this.lastName}`;
-//     }
-// }
+    this.getBirthYear = function() {
+        return this.dob.getFullYear();
+    }
+    this.getFullName = () => {
+        return `${this.firstName}` + ' '  +  `${this.lastName}`;
+    }
+}
 
 // // Instantiate object
-// const person1 = new Person('Danushka', 'Ratnayake', '4-6-1998');
-// const person2 = new Person('Tehani', 'Jayaweera', '7-2-1999');
+const person1 = new Person('Danushka', 'Ratnayake', '4-6-1998');
+const person2 = new Person('Tehani', 'Jayaweera', '7-2-1999');
 
-// console.log(person1.firstName, person1.lastName);
-// console.log(person2.dob);
-// console.log('Name : ' + person2.firstName, ' and ' + ' date of birrth : ' + person2.dob.getFullYear());
+console.log(person1.firstName, person1.lastName);
+console.log(person2.dob);
+console.log('Name : ' + person2.firstName, ' and ' + ' date of birrth : ' + person2.dob.getFullYear());
 
-// console.log(person1.getBirthYear());
-// console.log(person2.getFullName());
+console.log(person1.getBirthYear());
+console.log(person2.getFullName());
 
 
-// // this time with prototype
-// function Persons(firstName, lastName, dob) {
-//     this.firstName = firstName;
-//     this.lastName = lastName;
-//     this.dob = new Date(dob);
+// this time with prototype
+function Persons(firstName, lastName, dob) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = new Date(dob);
 
-// }
+}
 
-// Persons.prototype.getBirthYear = function() {
-//     return this.dob.getFullYear();
-// }
+Persons.prototype.getBirthYear = function() {
+    return this.dob.getFullYear();
+}
 
-// Persons.prototype.getFullName = function() {
-//     return `${this.firstName}` + ' '  +  `${this.lastName}`;
-// }
+Persons.prototype.getFullName = function() {
+    return `${this.firstName}` + ' '  +  `${this.lastName}`;
+}
 
-// const person3 = new Persons('Janith', 'Fernando', '4-2-1988');
-// const person4 = new Persons('Tina', 'Fernandez', '2-1-1995');
+const person3 = new Persons('Janith', 'Fernando', '4-2-1988');
+const person4 = new Persons('Tina', 'Fernandez', '2-1-1995');
 
-// console.log(person3.getBirthYear(), person3.getFullName());
-// console.log(person4.getFullName());
+console.log(person3.getBirthYear(), person3.getFullName());
+console.log(person4.getFullName());
 
 
 // comment above .... !
